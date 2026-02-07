@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - SafeGuard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0f1a; color: #e2e8f0; line-height: 1.7;
+        }
+        a { color: #f97316; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        nav {
+            background: rgba(10, 15, 26, 0.95); backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(249, 115, 22, 0.1);
+            padding: 16px 24px;
+        }
+        .nav-inner {
+            max-width: 800px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .logo { font-size: 22px; font-weight: 700; color: #fff; }
+        .logo span { color: #f97316; }
+        .back-link { color: #94a3b8; font-size: 14px; }
+        .content { max-width: 800px; margin: 0 auto; padding: 48px 24px 80px; }
+        h1 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .subtitle { font-size: 15px; color: #94a3b8; margin-bottom: 40px; }
+
+        /* Contact card */
+        .contact-card {
+            background: #1e293b; border-radius: 16px; padding: 32px;
+            border: 1px solid rgba(249,115,22,0.2); margin-bottom: 40px;
+            text-align: center;
+        }
+        .contact-card h2 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .contact-card p { font-size: 14px; color: #94a3b8; margin-bottom: 20px; }
+        .contact-email {
+            display: inline-block; padding: 12px 28px; border-radius: 12px;
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            color: #fff; font-size: 16px; font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .contact-email:hover { transform: translateY(-2px); text-decoration: none; }
+
+        /* FAQ */
+        .faq-title { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 24px; }
+        .faq-item {
+            background: #1e293b; border-radius: 12px; padding: 20px 24px;
+            margin-bottom: 12px; border: 1px solid rgba(255,255,255,0.05);
+        }
+        .faq-item h3 { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .faq-item p { font-size: 14px; color: #94a3b8; }
+
+        /* Safety banner */
+        .safety-banner {
+            background: rgba(220, 38, 38, 0.08); border: 1px solid rgba(220, 38, 38, 0.25);
+            border-radius: 12px; padding: 24px; margin-top: 40px; text-align: center;
+        }
+        .safety-banner h3 { font-size: 18px; font-weight: 700; color: #fca5a5; margin-bottom: 8px; }
+        .safety-banner p { font-size: 14px; color: #fca5a5; }
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding: 32px 24px; text-align: center;
+        }
+        footer p { font-size: 13px; color: #475569; }
+        @media (max-width: 640px) {
+            h1 { font-size: 26px; }
+            .content { padding: 32px 20px 60px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="index.html" class="logo">Safe<span>Guard</span></a>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+</nav>
+
+<div class="content">
+    <h1>Support</h1>
+    <p class="subtitle">Need help with SafeGuard? We're here for you.</p>
+
+    <!-- Contact -->
+    <div class="contact-card">
+        <h2>Get in Touch</h2>
+        <p>Have a question, issue, or suggestion? Send us an email and we'll respond as soon as possible.</p>
+        <a href="mailto:essentialdevteam@gmail.com" class="contact-email">essentialdevteam@gmail.com</a>
+    </div>
+
+    <!-- FAQ -->
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>What is SafeGuard?</h3>
+        <p>SafeGuard is a personal communication app that lets you create legacy messages for your loved ones, set a check-in timer, and send silent emergency SOS alerts to your trusted contacts.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How does the check-in timer work?</h3>
+        <p>You set a check-in interval (e.g., every 24 hours, every week). If you don't check in before the deadline, your pre-written legacy messages are automatically emailed to your designated contacts.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>What is the Silent Distress feature?</h3>
+        <p>You set up a separate distress PIN during onboarding. If you enter this PIN instead of your normal PIN, the app opens normally but silently sends an SOS email (with optional GPS location) to your emergency contacts. No visible alert is shown to anyone nearby.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Is SafeGuard an emergency service?</h3>
+        <p><strong>No.</strong> SafeGuard does not contact 911, police, or any emergency responders. It sends emails to private contacts you designate. If you are in immediate danger, always call 911 (or your local emergency number) first.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>What's the difference between Free and Premium?</h3>
+        <p>Free accounts include 1 contact, 1 message, a 3-day check-in timer, and 1 emergency SOS contact. Premium unlocks up to 20 contacts, 20 messages, all timer intervals with auto-renew, multiple SOS contacts, 500-character SOS messages, contact import, and custom app icon. Plans: $2.99/week, $6.99/month, or $49.99/year (best value with a 7-day free trial).</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How do I cancel my subscription?</h3>
+        <p>Open your iPhone Settings &gt; tap your name &gt; Subscriptions &gt; SafeGuard &gt; Cancel Subscription. Your premium features will remain active until the end of the current billing period.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can I change my PIN or distress PIN?</h3>
+        <p>Yes. Go to Settings in the app to update your normal PIN. To reset your distress PIN, use the reset option in Settings (requires your current normal PIN for verification).</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>What happens to my data if I delete my account?</h3>
+        <p>All your personal data, messages, and contacts are permanently deleted from our servers within 30 days. Any messages that were already sent via email cannot be recalled.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>My contacts didn't receive my SOS/legacy messages. What happened?</h3>
+        <p>Message delivery depends on internet connectivity, email provider availability, and spam filters. Ask your contacts to check their spam/junk folders. If the issue persists, contact us at the email above.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>I forgot my account password. How do I recover it?</h3>
+        <p>On the login screen, tap "Forgot Password" to receive a password reset link via email. Your app PIN is separate from your account password.</p>
+    </div>
+
+    <!-- Safety reminder -->
+    <div class="safety-banner">
+        <h3>If You Are in Immediate Danger</h3>
+        <p>Please call <strong>911</strong> (or your local emergency number) immediately. SafeGuard is a supplemental communication tool and should never be your only means of seeking help in an emergency.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Essential Dev Team. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
