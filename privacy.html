@@ -65,7 +65,7 @@
 
 <div class="content">
     <h1>Privacy Policy</h1>
-    <p class="date">Last Updated: February 6, 2026</p>
+    <p class="date">Last Updated: July 13, 2026</p>
     <p class="intro">Essential Dev Team ("we", "us", "our") operates the SafeGuard mobile application ("App"). This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our App.</p>
 
     <div class="section">
@@ -75,8 +75,10 @@
             <tr><th>Data Type</th><th>Purpose</th></tr>
             <tr><td>Email address</td><td>Account creation, authentication, and account recovery</td></tr>
             <tr><td>Account password</td><td>Securely stored (hashed) for authentication</td></tr>
-            <tr><td>Contact names and email addresses</td><td>Delivering legacy messages and SOS alerts to your designated recipients</td></tr>
+            <tr><td>Contact names, email addresses, phone numbers, and relationship labels</td><td>Delivering legacy messages and SOS alerts to your designated recipients</td></tr>
             <tr><td>Legacy message content</td><td>Storing and delivering your messages when triggered</td></tr>
+            <tr><td>Distress message content</td><td>Storing the message sent to your contacts when a distress PIN or SOS is triggered</td></tr>
+            <tr><td>Deadman-switch configuration</td><td>Storing your check-in schedule, deadlines, and trigger settings to operate the deadman-switch feature</td></tr>
             <tr><td>Check-in timestamps</td><td>Monitoring your check-in activity to trigger message delivery if a deadline is missed</td></tr>
             <tr><td>GPS coordinates (optional)</td><td>Including your location in SOS emergency alerts, only when you enable this feature</td></tr>
             <tr><td>Security event logs</td><td>Recording failed login attempts and SOS events for your account security</td></tr>
@@ -104,6 +106,7 @@
         <ul>
             <li><strong>Supabase</strong> — Database hosting, user authentication, and serverless functions. <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></li>
             <li><strong>Resend</strong> — Email delivery service used to send legacy messages and SOS alerts. <a href="https://resend.com/legal/privacy-policy" target="_blank">Resend Privacy Policy</a></li>
+            <li><strong>Twilio</strong> — SMS delivery service. SOS alerts and scheduled messages may be delivered by SMS through Twilio; your emergency contacts' phone numbers are transmitted to Twilio to deliver those messages. <a href="https://www.twilio.com/legal/privacy" target="_blank">Twilio Privacy Policy</a></li>
             <li><strong>Apple App Store</strong> — Subscription billing and payment processing. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
         </ul>
         <p style="margin-top: 10px;">These services process your data in accordance with their own privacy policies. We encourage you to review them.</p>
@@ -154,17 +157,29 @@
     </div>
 
     <div class="section">
-        <h2>8. Children's Privacy</h2>
+        <h2>8. Device Permissions</h2>
+        <p>The App may request the following device permissions. Each is optional and used only for the stated feature:</p>
+        <ul>
+            <li><strong>Location</strong> — Attached to SOS alerts, only when you enable location sharing.</li>
+            <li><strong>Contacts</strong> — Used when you choose to import emergency contacts from your address book.</li>
+            <li><strong>Camera, Microphone, and Photo Library</strong> — Used when you choose to add photo, video, or audio attachments to your messages.</li>
+            <li><strong>Notifications</strong> — Used to remind you about upcoming check-in deadlines.</li>
+        </ul>
+        <p style="margin-top: 10px;">You can revoke any of these permissions at any time in your device's Settings.</p>
+    </div>
+
+    <div class="section">
+        <h2>9. Children's Privacy</h2>
         <p>SafeGuard is intended for users aged 18 and older. We do not knowingly collect personal information from anyone under the age of 18. If we become aware that we have collected data from a minor, we will delete it promptly.</p>
     </div>
 
     <div class="section">
-        <h2>9. Changes to This Policy</h2>
+        <h2>10. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. Material changes will be communicated through the App or via email. Your continued use of the App after changes are posted constitutes acceptance of the updated policy.</p>
     </div>
 
     <div class="section">
-        <h2>10. Contact Us</h2>
+        <h2>11. Contact Us</h2>
         <p>If you have questions or concerns about this Privacy Policy or how your data is handled, contact us:</p>
         <p style="margin-top: 8px;"><strong>Essential Dev Team</strong><br>
         Email: <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a></p>
